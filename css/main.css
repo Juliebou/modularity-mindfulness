@@ -67,3 +67,34 @@ ul {
   font-size: 1.125rem;
   text-align: center;
 }
+
+section {
+  margin: 1.5rem;
+}
+
+.col1 {
+  display: grid;
+  grid-template-areas:
+    "title1"
+    "definition1"
+    "button1";
+    grid-template-columns: 1fr;
+}
+
+.col2 {
+  display: grid;
+  grid-template-areas:
+    "title2"
+    "definition2"
+    "button2";
+    grid-template-columns: 1fr;
+}
+
+.col3 {
+  display: grid;
+  grid-template-areas:
+    "title3"
+    "definition3"
+    "button3";
+    grid-template-columns: 1fr;
+}
