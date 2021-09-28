@@ -98,3 +98,10 @@ section {
     "button3";
     grid-template-columns: 1fr;
 }
+
+article h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1em;
+}
