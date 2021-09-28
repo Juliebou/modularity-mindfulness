@@ -84,34 +84,34 @@ section {
 }
 
 article {
-    margin: 1.5rem;
+  margin: 1.5rem;
 }
 
 .col1 {
   display: grid;
   grid-template-areas:
-    "title1"
-    "definition1"
-    "button1";
-    grid-template-columns: 1fr;
+  "title1"
+  "definition1"
+  "button1";
+  grid-template-columns: 1fr;
 }
 
 .col2 {
   display: grid;
   grid-template-areas:
-    "title2"
-    "definition2"
-    "button2";
-    grid-template-columns: 1fr;
+  "title2"
+  "definition2"
+  "button2";
+  grid-template-columns: 1fr;
 }
 
 .col3 {
   display: grid;
   grid-template-areas:
-    "title3"
-    "definition3"
-    "button3";
-    grid-template-columns: 1fr;
+  "title3"
+  "definition3"
+  "button3";
+  grid-template-columns: 1fr;
 }
 
 article h2 {
@@ -155,18 +155,54 @@ footer {
 @media only screen and (min-width: 38em) {
 
   html {
-      font-size: 110%;
+    font-size: 110%;
+  }
+
+body {
+  max-width: 61rem;
+}
+
+header img {
+  width: 100%;
+}
+
+header {
+  display: contents;
+  display: grid;
+  grid-template-areas:
+  "logo nav";
+  grid-template-columns: 30em 1fr;
+}
+header h1,
+header h2 {
+  text-align: left;
+
+}
+
+  section {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "col1 col2 col3";
+  }
+
+  .col1,
+  .col2,
+  .col3 {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+    article p {
+      flex-grow: 1;
     }
 
-    section {
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas:
-      "col1 col2 col3";
-    }
-
-      article {
-        display: contents;
-      }
+  }
 
 }
