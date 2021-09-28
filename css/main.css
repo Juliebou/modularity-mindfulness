@@ -25,3 +25,12 @@ img {
   display: block;
   width: 100%;
 }
+
+header h1, h2 {
+  text-align: center;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
