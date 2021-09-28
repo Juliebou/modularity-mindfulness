@@ -38,6 +38,11 @@ nav ul li {
   list-style-type: none;
 }
 
+header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 ul {
   display: flex;
   justify-content: center;
