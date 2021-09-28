@@ -70,6 +70,7 @@ ul {
 
 section {
   margin: 1.5rem;
+  max-width: 30em;
 }
 
 .col1 {
@@ -104,4 +105,8 @@ article h2 {
   flex-direction: column;
   align-items: flex-start;
   padding-top: 1em;
+}
+
+article p {
+  font-size: 1.125rem;
 }
