@@ -45,3 +45,20 @@ ul {
   font-size: 1.5rem;
   color: #3783a3;
 }
+
+.text {
+  border-top: 4px solid #e2e2e2;
+  border-bottom: 4px solid #e2e2e2;
+  padding: 1rem;
+  margin: 1.5rem;
+}
+
+.text i {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.text p {
+  font-size: 1.125rem;
+  text-align: center;
+}
