@@ -69,7 +69,6 @@ ul {
   padding: 1rem;
   margin: 1.5rem 1rem;
   text-align: center;
-
 }
 
 .text i {
@@ -201,10 +200,20 @@ footer {
     padding: 1.5rem 0 0 0;
   }
 
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "text"
+    "section";
+  }
+
   .text {
-    padding: 1rem 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    grid-area: text;
+    max-width: 30em;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
   }
 
   section {
@@ -233,4 +242,21 @@ footer {
 
 }
 
+@media only screen and (min-width: 62em) {
+
+  html {
+    font-size: 100%;
+  }
+
+  body {
+    max-width: 80rem;
+text-align: center;
+  }
+
+  .text {
+    max-width: 30em;
+  }
+
+article {
+  text-align: left;
 }
