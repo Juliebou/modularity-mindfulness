@@ -41,8 +41,12 @@ nav ul li {
   text-decoration: underline;
   list-style-type: none;
   margin-top: -1rem;
-  margin-left: .4rem;
-  margin-right: .4rem;
+  padding-left: .8rem;
+  padding-right: .8rem;
+}
+
+nav {
+  margin-right: 1rem;
 }
 
 header {
@@ -83,8 +87,8 @@ section {
   border-bottom: 4px solid #e2e2e2;
 }
 
-article {
-  /* margin: 1.5rem; */
+article img {
+  padding-bottom: .5rem;
 }
 
 .col1 {
@@ -94,7 +98,7 @@ article {
   "definition1"
   "button1";
   grid-template-columns: 1fr;
-  padding: 1rem;
+  padding-left: 1rem;
 }
 
 .col2 {
@@ -133,6 +137,7 @@ article span {
 
 article p {
   font-size: 1rem;
+  padding-top: .5rem;
 }
 
 article a {
@@ -146,7 +151,7 @@ article a {
 }
 
 article i {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -191,8 +196,9 @@ footer {
   }
 
   nav ul {
+    margin-right: -1.5rem;
     justify-content: flex-end;
-    padding: 1rem;
+    padding: 1.5rem 0 0 0;
   }
 
   .text {
@@ -218,7 +224,7 @@ footer {
     align-items: flex-start;
     width: 100%;
     gap: .2rem;
-    padding: 1rem;
+    padding: 0 1rem;
   }
 
   article p {
