@@ -1,5 +1,4 @@
-@webkit-viewport { width: device-width; scale: 1;}
-@viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1; }
 
 html {
   box-sizing: border-box;
@@ -58,7 +57,6 @@ header {
 ul {
   display: flex;
   justify-content: center;
-  /* gap: 1rem; */
   font-size: 1.125rem;
   color: #3783a3;
 }
@@ -84,6 +82,8 @@ ul {
 
 section {
   border-bottom: 4px solid #e2e2e2;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 article img {
@@ -93,9 +93,9 @@ article img {
 .col1 {
   display: grid;
   grid-template-areas:
-  "title1"
-  "definition1"
-  "button1";
+    "title1"
+    "definition1"
+    "button1";
   grid-template-columns: 1fr;
   padding-bottom: 1rem;
 }
@@ -103,9 +103,9 @@ article img {
 .col2 {
   display: grid;
   grid-template-areas:
-  "title2"
-  "definition2"
-  "button2";
+    "title2"
+    "definition2"
+    "button2";
   grid-template-columns: 1fr;
   padding-bottom: 1rem;
 }
@@ -113,16 +113,11 @@ article img {
 .col3 {
   display: grid;
   grid-template-areas:
-  "title3"
-  "definition3"
-  "button3";
+    "title3"
+    "definition3"
+    "button3";
   grid-template-columns: 1fr;
   padding-bottom: 1rem;
-}
-
-section {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 article h2 {
@@ -131,7 +126,6 @@ article h2 {
   flex-direction: column;
   align-items: flex-start;
   padding-top: 1em;
-  /* margin-bottom: .5rem; */
   font-style: normal;
 }
 
@@ -179,8 +173,8 @@ footer {
     display: contents;
     display: grid;
     grid-template-areas:
-    "logo nav"
-    "banner banner";
+      "logo nav"
+      "banner banner";
     grid-template-columns: 1fr 1fr;
   }
 
@@ -204,7 +198,7 @@ footer {
   nav ul {
     margin-right: -1.9rem;
     justify-content: flex-end;
-    padding: 1.5rem 0 0 0;
+    padding: 1.5rem 0 0;
   }
 
   nav ul li {
@@ -215,8 +209,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "text"
-    "section";
+      "text"
+      "section";
   }
 
   .text {
@@ -225,15 +219,12 @@ footer {
     justify-content: center;
     padding-top: 1rem;
     margin: 1.8rem auto 1.2rem;
-    /* align-items: center; */
-    /* align-self: center; */
   }
 
   section {
     display: grid;
     grid-template-columns: 1fr 33.8% 1fr;
-    grid-template-areas:
-    "col1 col2 col3";
+    grid-template-areas: "col1 col2 col3";
   }
 
   .col1,
@@ -245,14 +236,16 @@ footer {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    /* gap: .2rem; */
     padding: 0 .5rem;
   }
 
   article p {
     flex-grow: 1;
     font-size: 1rem;
-    text-align:inherit;
+    text-align: inherit;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   article a {
@@ -265,22 +258,16 @@ footer {
     padding-top: 1.3rem;
     padding-bottom: .5rem;
     font-weight: bold;
-}
+  }
 
-article i {
-margin: 0;
-  font-size: 1.5rem;
-}
+  article i {
+    margin: 0;
+    font-size: 1.5rem;
+  }
 
-article p {
-  margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-h2 span {
-  padding-bottom: -.5rem;
-}
+  h2 span {
+    /* padding-bottom: -.5rem; */
+  }
 
 }
 
@@ -301,7 +288,7 @@ h2 span {
   }
 
   .text i {
-    padding-bottom: 0
+    padding-bottom: 0;
   }
 
   footer p {
@@ -312,3 +299,5 @@ h2 span {
   article {
     text-align: left;
   }
+
+}
