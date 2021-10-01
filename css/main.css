@@ -40,13 +40,13 @@ header h1, h2 {
 nav ul li {
   text-decoration: underline;
   list-style-type: none;
-  margin-top: -1rem;
+  margin-top: -1.05rem;
   padding-left: .8rem;
   padding-right: .8rem;
 }
 
 nav {
-  margin-right: 1rem;
+  margin-right: 1.1rem;
 }
 
 header {
@@ -97,7 +97,7 @@ article img {
   "definition1"
   "button1";
   grid-template-columns: 1fr;
-  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .col2 {
@@ -107,7 +107,7 @@ article img {
   "definition2"
   "button2";
   grid-template-columns: 1fr;
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 
 .col3 {
@@ -117,7 +117,12 @@ article img {
   "definition3"
   "button3";
   grid-template-columns: 1fr;
-  padding: 1rem;
+  padding-bottom: 1rem;
+}
+
+section {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 article h2 {
@@ -125,7 +130,7 @@ article h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: .6em;
+  padding-top: 1em;
   /* margin-bottom: .5rem; */
   font-style: normal;
 }
@@ -152,6 +157,7 @@ article a {
 article i {
   font-size: 1.25rem;
   font-style: normal;
+  font-weight: bold;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -166,7 +172,7 @@ footer {
   }
 
   body {
-    max-width: 61rem;
+    max-width: 62rem;
   }
 
   header {
@@ -212,8 +218,10 @@ footer {
     grid-area: text;
     max-width: 30em;
     justify-content: center;
-    align-items: center;
-    align-self: center;
+    padding-top: 1rem;
+    margin: 2rem auto 1rem;
+    /* align-items: center; */
+    /* align-self: center; */
   }
 
   section {
@@ -233,12 +241,22 @@ footer {
     align-items: flex-start;
     width: 100%;
     gap: .2rem;
-    padding: 0 1rem;
+    padding: 0 .75rem;
   }
 
   article p {
     flex-grow: 1;
   }
+
+  article a {
+    margin-bottom: 2rem;
+  }
+
+  article h2 {
+    padding-top: 1.35rem;
+    font-weight: bold;
+  }
+}
 
 }
 
