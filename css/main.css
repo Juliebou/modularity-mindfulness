@@ -193,15 +193,16 @@ footer {
   header h2 {
     padding-top: 3rem;
     padding-bottom: 1rem;
+    font-weight: bold;
   }
 
   header img {
     grid-area: banner;
-    width: 100%;
+    max-width: 100%;
   }
 
   nav ul {
-    margin-right: -1.5rem;
+    margin-right: -1rem;
     justify-content: flex-end;
     padding: 1.5rem 0 0 0;
   }
@@ -226,7 +227,7 @@ footer {
 
   section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 33.8% 1fr;
     grid-template-areas:
     "col1 col2 col3";
   }
@@ -240,12 +241,14 @@ footer {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    gap: .2rem;
-    padding: 0 .75rem;
+    /* gap: .2rem; */
+    padding: 0 .5rem;
   }
 
   article p {
     flex-grow: 1;
+    font-size: 1rem;
+    text-align:inherit;
   }
 
   article a {
@@ -253,9 +256,13 @@ footer {
   }
 
   article h2 {
-    padding-top: 1.35rem;
+    padding-top: 1.3rem;
+    padding-bottom: .5rem;
     font-weight: bold;
-  }
+}
+
+h2 span {
+  padding-bottom: -.5rem;
 }
 
 }
